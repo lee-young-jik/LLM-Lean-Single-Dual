@@ -108,34 +108,3 @@ Dual은 첫 라운드에서 77개, Single은 66개를 해결했습니다.
 미해결 실행까지 포함한 구조별 685회 실행의 평균입니다.
 Dual은 상대적으로 짧은 성공 코드를 생성했지만 토큰 사용량, 실행 시간 및 API 비용은 더 높았습니다.
 일부 API 응답에는 사용량 정보가 누락되어 있어, 비용은 기록된 값 기준입니다.
-
-## 최종 원고 재현에 필요한 파일
-
-| 목적 | 파일 |
-|---|---|
-| 최종 원고와 사용 그림 | `paper/paper.hwp`, `paper/paper.tex`, `paper/paper.pdf`, `paper/assets/` |
-| 모델 입력 | `data/book137_v1/problems.jsonl` |
-| 평가 정답·참조 증명 | `data/book137_v1/labels.jsonl`, `reference_answers.jsonl` |
-| 문제 목록·데이터 해시 | `data/book137_v1/ids.txt`, `manifest.json` |
-| 실제 에이전트·Lean 검증 구현 | `src/single_orchestrator/` |
-| 역할별 프롬프트 | `prompts/`, `src/single_orchestrator/goal_prompts.py` |
-| 현재 실행 설정·의존성 | `configs/two_goal_experiment.env`, `pyproject.toml`, `requirements-tested.txt` |
-| Lean 환경 설치·반복 실행 | `scripts/setup_minif2f.sh`, `scripts/run_logged_experiment.py` |
-| 실행 결과 채점 | `scripts/analyze_logged_experiment.py` |
-| 최종 결과 원자료·집계 | `results/final_paper/`, `scripts/reproduce_paper_tables.py` |
-| 입력 경계·해시 검증 | `scripts/validate_release.py` |
-
-평가 정답, 참조 증명 및 결과 원자료는 **모델 입력이 아닙니다**.
-구현 설명은 [FINAL_PIPELINE.md](docs/FINAL_PIPELINE.md), 설치·실행은
-[CURRENT_SETUP.md](docs/CURRENT_SETUP.md)를 참고하세요.
-
-## 기존 결과 검산: 모델 호출 없음
-
-```bash
-python3 scripts/validate_release.py
-python3 scripts/reproduce_paper_tables.py --check
-```
-
-두 번째 명령은 최종 표 1·4·5·6·7과 방향 선택 집계를 원자료에서 재계산하고,
-성공 코드의 줄 수도 확인합니다. 과거 Lean 검증을 새로 실행하는 명령은 아닙니다.
-새 모델 실행에는 명시적인 `--run`이 필요하며 기존 결과와 별도 디렉터리를 사용합니다.
