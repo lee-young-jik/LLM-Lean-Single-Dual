@@ -1,4 +1,4 @@
-# Single & Dual · LLM–Lean
+# Proposal of an LLM-Lean Approach and Architecture for Math Problem Solving
 
 **수학 문제 자동 해결을 위한 LLM-Lean 접근과 아키텍처 제안**
 
