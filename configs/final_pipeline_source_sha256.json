@@ -1,0 +1,17 @@
+{
+    "description":  "Full-memory final pipeline used for the 121-problem evaluation; UTF-8 source with LF line endings.",
+    "files":  {
+                  "src/single_orchestrator/formal_false_review.py":  "47c4650f481d4323a587f399bfc4d9e22e538e7689e5d79f8d23fc36fd7ae390",
+                  "src/single_orchestrator/goal_api.py":  "3f92f87b1f258b7f4743b55d1eb7e66f3cee55e8e1b6406866aa981179af7f17",
+                  "src/single_orchestrator/goal_prompts.py":  "54c2a6e703d4a1d8c5cb38190dbb8930147fb327af10ab9d568cf07f0f4acd0d",
+                  "src/single_orchestrator/goal_search.py":  "56928fc67ff9e9757231c8b7c5dd3cb23aabff60a27f0017385f160cda821ac1",
+                  "src/single_orchestrator/goal_trace.py":  "532781290d5f68973a89778d97fd4cf929017f98e53326ff9caa73151ab4de5c",
+                  "src/single_orchestrator/lean_declarations.py":  "f63600c174899ff978439d5aa071435684c0993da6d4561cfe5c8705f7a5dbe2",
+                  "src/single_orchestrator/local_audit.py":  "714ac89b14bd17b4f7e892a703147012bafeda8b0d9e3f96bd3178da18f668e4",
+                  "src/single_orchestrator/model.py":  "87f5571025a2fd714810f25912ce9bebd2d72d7bd0e8aee2aa996155fa26471f",
+                  "src/single_orchestrator/planner_memory.py":  "39e39489c34eb90136b08abf09bff70daadf23423a78f490280f35adf7fa84ab",
+                  "src/single_orchestrator/proof_audit.py":  "fd10c85f24a8b4aea518ad3a06aecd735756d38329f47776f8f9692896755146",
+                  "src/single_orchestrator/repair_context.py":  "22ac2a1c9366e227f0b31c48de61a00538388c25112934c6e9265416424b56d5",
+                  "src/single_orchestrator/verifier.py":  "039cc8dadc929df755cb81ba97dcf1c7eed261bd38e9ab554f0966a290a9cd00"
+              }
+}

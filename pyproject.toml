@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-lean-single-dual"
+version = "0.1.0"
+description = "Reproducibility package for Single and Dual LLM-Lean architectures."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "langgraph>=0.2",
+  "langsmith>=0.1",
+  "openai>=1.0",
+  "python-dotenv>=1.0",
+]
+
+[project.scripts]
+proofnet-eval = "single_orchestrator.proofnet_cli:main"
+dual-proofnet-eval = "single_orchestrator.dual_proofnet_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

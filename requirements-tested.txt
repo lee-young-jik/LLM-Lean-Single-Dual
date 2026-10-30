@@ -1,0 +1,5 @@
+# Top-level package versions used in the local verified environment.
+langgraph==1.0.3
+langsmith==0.4.43
+openai==2.8.0
+python-dotenv==1.2.1

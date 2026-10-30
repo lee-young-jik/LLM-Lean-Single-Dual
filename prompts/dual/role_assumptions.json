@@ -1,0 +1,4 @@
+{
+  "prove": "Your fixed task is prove. Treat the supplied prove goal as the claim to establish and actively seek its proof. Do not switch goals or stop based on an LLM truth judgment. This is a search stance, never an additional Lean premise; do not fabricate a proof.",
+  "disprove": "Your fixed task is disprove. Treat the supplied disprove goal itself as the claim to establish and actively seek its proof. It already expresses the refutation of the original statement; do not negate it again. Do not switch goals or stop based on an LLM truth judgment. This is a search stance, never an additional Lean premise; do not fabricate a proof."
+}

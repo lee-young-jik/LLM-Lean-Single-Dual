@@ -1,0 +1,21 @@
+{
+  "problems": 137,
+  "executions": 1370,
+  "repetitions": 5,
+  "modes": [
+    "single",
+    "dual"
+  ],
+  "public_artifact": "Sanitized execution summaries plus successful proof bodies and Single direction choices. No API prompts, credentials, personal filesystem paths, or failed-trial logs.",
+  "new_model_calls": false,
+  "new_lean_certification": false,
+  "sha256": {
+    "executions.jsonl": "d1efa09aaa7a98017f8fe4f2ca412769755b0749eac1a42b1c7531df2ce18e61",
+    "single_choices.jsonl": "07d35b53241097e277a177e93de135bc9d356502897dcc13ba5ddc40534ee6a0"
+  },
+  "source_sha256": {
+    "per_execution.jsonl": "ed6aa4ecd0e63883997d5d6983e5e831d53759198c3e46652b29e608e0ff8301",
+    "resources_per_execution.jsonl": "3918c456a12c0f54d15596e3792bb54455943973acfa8ae6c65ae55959491f4c",
+    "choices.jsonl": "1de64c118c76bc2594bc202b799c85b37b461b2994252d3ceff87ed2c9e0cd89"
+  }
+}

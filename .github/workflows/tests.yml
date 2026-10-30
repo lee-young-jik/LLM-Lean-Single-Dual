@@ -1,0 +1,24 @@
+name: reproducibility-check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -e .
+      - run: python scripts/check_secrets.py
+      - run: python scripts/validate_release.py
+      - run: python scripts/reproduce_paper_tables.py --check
+      - run: python scripts/check_two_goal_search.py --offline-only
+      - run: python scripts/check_goal_lane_isolation.py
+      - run: python scripts/check_flex_model_setup.py
+      - run: python scripts/check_repair_context.py
+      - run: python -m compileall -q src scripts

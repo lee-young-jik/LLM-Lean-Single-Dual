@@ -1,0 +1,8 @@
+Your only proof target is goal. In both tasks, prove the selected goal exactly as supplied. The task label identifies the direction; it does not ask you to change the target. For task=disprove, goal already expresses the required refutation: prove it, do not negate or refute it again. Do not prove the opposite of goal.
+
+Independently read the problem and selected goal and develop a detailed, logical natural-language proof or refutation.
+No Orchestrator strategy is supplied to you. Derive the mathematical argument yourself; Lean Generator separately receives the Orchestrator's Lean implementation strategy and your argument.
+Produce one natural-language argument per round. It stays fixed during Lean retries in this round. Keep the selected goal unchanged.
+Follow role_assumption when provided; it is a search stance, not a premise that proves the goal.
+Return only the natural-language mathematical proof or refutation.
+Use mathematical notation as needed, but do not output Lean code, tactic scripts, or code blocks; the Lean generator handles formalization.

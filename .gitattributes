@@ -1,0 +1,4 @@
+# Preserve published dataset bytes for SHA-256 verification.
+data/book137_v1/** -text
+results/book137_pass5/** -text
+results/final_paper/** -text

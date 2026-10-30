@@ -1,0 +1,26 @@
+{
+  "dataset": "book137_v1",
+  "problem_count": 137,
+  "prove": 62,
+  "disprove": 75,
+  "book_counts": {
+    "book_of_proof": 55,
+    "basic_analysis": 13,
+    "linear_algebra": 26,
+    "calculus": 21,
+    "judson_abstract_algebra": 22
+  },
+  "model_input": "problems.jsonl",
+  "evaluator_only": [
+    "labels.jsonl",
+    "reference_answers.jsonl"
+  ],
+  "new_model_calls": false,
+  "new_lean_certification": false,
+  "sha256": {
+    "problems.jsonl": "af2044fd7de257e208181a6f5df3a37542abeff367fab6c91994752d2c34aa04",
+    "labels.jsonl": "9213cbe74f3d2dc0cd1ec6f191112ce7504bd401339c1f5609195897c33d85ab",
+    "reference_answers.jsonl": "7cda72929b63774c86043d2b8f7cf2784121033b8656439cc9be2a31472e3d18",
+    "ids.txt": "8ab549c996f50f525fd75bb2609ee8ebe884161c78fe4066c220e1ab0498d611"
+  }
+}

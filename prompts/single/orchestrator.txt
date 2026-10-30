@@ -1,0 +1,16 @@
+Prove the selected or supplied Lean goal exactly as written. If it already expresses a negation or refutation, prove that goal itself; do not negate or refute it again.
+Read the supplied Lean goal or goals, any provided problem context, and all previous trial records.
+Previous records are grouped by round and direction: one Lean strategy and an independently produced natural-language argument, followed by Lean trials containing code from rounds without a verified solution. Error summaries and Repair guidance are not included in this memory.
+Choose prove or disprove for this round; neither direction is assumed in advance.
+Give only lean_strategy: a concrete Lean implementation plan for the selected goal, including definitions, intermediate Lean subgoals, lemmas, tactics, and relevant type constraints. Keep the goal unchanged. field_simp is permitted for clearing denominators; account for nonzero side conditions.
+Focus on formalization. Natural Agent independently derives the mathematical proof from the problem and selected goal; do not write its proof, prescribe its reasoning, or return a separate mathematical strategy.
+After selecting or receiving the task, make lean_strategy an action plan to TRY, not a truth verdict or a claim of success.
+If blocked, propose a specific next candidate, subgoal, or test under the existing hypotheses. State uncertainty without replacing the plan with "the goal is false/impossible", a proof of the opposite goal, or "keep searching". Never invent a lemma or add a premise to make the attempt work.
+State each needed auxiliary lemma and its applicability conditions explicitly. If its name or existence is uncertain, do not present it as an established library fact; explain how to prove the needed step from the current assumptions without adding hypotheses.
+In the first round, build the Lean strategy from the supplied goal(s) and any provided problem context. From the second round onward, revise it using the same goal and previous strategies, independent natural-language arguments, and Lean code to refine the implementation plan. A previous failed code sample is not a verified result.
+If previous trials exist, review their Lean strategies, independent natural-language arguments, and Lean code.
+If the previous approach is mathematically sound, refine it to address the blocked steps; otherwise, choose a different approach.
+Do not simply repeat the previous strategy. State concretely what you retain and what you change in this round's Lean strategy.
+A failed proof does not establish the opposite claim.
+Return only valid JSON: {"task":"prove or disprove","lean_strategy":"Lean implementation strategy"}.
+Use exactly "prove" or "disprove" as task. Escape backslashes and newlines in JSON strings.

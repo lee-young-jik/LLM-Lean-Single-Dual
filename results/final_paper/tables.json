@@ -1,0 +1,165 @@
+{
+  "table1": {
+    "basic_analysis": {
+      "prove": 2,
+      "disprove": 11,
+      "total": 13
+    },
+    "book_of_proof": {
+      "prove": 24,
+      "disprove": 31,
+      "total": 55
+    },
+    "calculus": {
+      "prove": 8,
+      "disprove": 13,
+      "total": 21
+    },
+    "judson_abstract_algebra": {
+      "prove": 22,
+      "disprove": 0,
+      "total": 22
+    },
+    "linear_algebra": {
+      "prove": 6,
+      "disprove": 20,
+      "total": 26
+    }
+  },
+  "table4": {
+    "single": {
+      "proved": 50,
+      "disproved": 56,
+      "unsolved": 31,
+      "pass_at_5_solved": 106,
+      "pass_at_5_percent": 77.37226277372264,
+      "accuracy_at_5_successes": 430,
+      "accuracy_at_5_denominator": 685,
+      "accuracy_at_5_percent": 62.77372262773723,
+      "per_repetition_solved": [
+        89,
+        88,
+        85,
+        83,
+        85
+      ],
+      "mean_solved": 86,
+      "sample_sd_solved": 2.449489742783178
+    },
+    "dual": {
+      "proved": 52,
+      "disproved": 57,
+      "unsolved": 28,
+      "pass_at_5_solved": 109,
+      "pass_at_5_percent": 79.56204379562044,
+      "accuracy_at_5_successes": 449,
+      "accuracy_at_5_denominator": 685,
+      "accuracy_at_5_percent": 65.54744525547446,
+      "per_repetition_solved": [
+        90,
+        89,
+        92,
+        89,
+        89
+      ],
+      "mean_solved": 89.8,
+      "sample_sd_solved": 1.3038404810405297
+    }
+  },
+  "table5": [
+    {
+      "group": "Short",
+      "n": 46,
+      "single": {
+        "solved": 44,
+        "length_ratio": 4.90719696969697
+      },
+      "dual": {
+        "solved": 44,
+        "length_ratio": 4.746212121212121
+      }
+    },
+    {
+      "group": "Medium",
+      "n": 46,
+      "single": {
+        "solved": 36,
+        "length_ratio": 2.3030419448924353
+      },
+      "dual": {
+        "solved": 37,
+        "length_ratio": 2.0835942894766424
+      }
+    },
+    {
+      "group": "Long",
+      "n": 45,
+      "single": {
+        "solved": 26,
+        "length_ratio": 1.476082528101587
+      },
+      "dual": {
+        "solved": 28,
+        "length_ratio": 1.3231466034479455
+      }
+    },
+    {
+      "group": "Overall",
+      "n": 137,
+      "single": {
+        "solved": 106,
+        "length_ratio": 3.1811728529569394
+      },
+      "dual": {
+        "solved": 109,
+        "length_ratio": 2.9630681370689134
+      }
+    }
+  ],
+  "table6": {
+    "single": [
+      66,
+      30,
+      10
+    ],
+    "dual": [
+      77,
+      25,
+      7
+    ]
+  },
+  "table7": {
+    "single": {
+      "input_tokens": 92407.75912408759,
+      "output_tokens": 14989.160583941606,
+      "total_tokens": 107396.91970802919,
+      "wall_seconds": 395.4423604547607,
+      "reported_cost_usd": 0.008731471773722627
+    },
+    "dual": {
+      "input_tokens": 174885.26715328466,
+      "output_tokens": 25137.055474452554,
+      "total_tokens": 200022.32262773722,
+      "wall_seconds": 485.6291647345453,
+      "reported_cost_usd": 0.015313418799270073
+    }
+  },
+  "usage_missing_responses": {
+    "single": 41,
+    "dual": 91
+  },
+  "paired_pass_at_5": {
+    "both": 106,
+    "single_only": 0,
+    "dual_only": 3,
+    "mcnemar_exact_two_sided_p": 0.25
+  },
+  "single_wrong_direction": {
+    "total": 11,
+    "by_round": {
+      "1": 0,
+      "2": 5,
+      "3": 6
+    }
+  }
+}
