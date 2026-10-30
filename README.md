@@ -22,7 +22,11 @@
 Lean 검증에 실패하면 Repair Agent의 피드백을 바탕으로 코드를 수정하고,
 검증을 통과하면 Proved 또는 Disproved로 판정합니다.
 
-![Single과 Dual이 저장하는 문제 정보 및 탐색 기록](paper/assets/figure2_memory.png)
+<p align="center">
+  <a href="paper/assets/figure2_memory.png">
+    <img src="paper/assets/figure2_memory.png" alt="Single과 Dual이 저장하는 문제 정보 및 탐색 기록" width="480">
+  </a>
+</p>
 
 *그림 2. 문제와 목표, 시도별 전략·자연어 증명·Lean 코드를 저장하는 메모리 구성.*
 
